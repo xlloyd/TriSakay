@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:background="@color/TrisakayWhite"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/accountImage"
+        android:layout_height="100dp"
+        android:layout_width="100dp"
+        android:layout_gravity="center"
+        android:src="@drawable/account"
+        android:scaleType="centerCrop"
+    />
+
+    <TextView
+        android:id="@+id/accountTitle"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_gravity="bottom"
+        android:text="@string/username"
+        android:textColor="@color/TrisakayPrimary"
+        android:layout_marginBottom="12dp"
+    />
+
+    <View
+        android:layout_height="1dp"
+        android:layout_width="match_parent"
+        android:layout_gravity="bottom"
+        android:background="@color/TrisakayAsh"
+    />
+
+</FrameLayout>

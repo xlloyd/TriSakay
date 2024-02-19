@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+   android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+    
+        <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fastscroll_margin"
+        android:layout_weight="0.4"
+        android:background="@color/TrisakayPrimary">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/circleImageView1"
+            android:layout_height="140dp"
+            android:layout_width="120dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/centerimage" />
+
+        <TextView
+            android:text="@string/login_AppName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_below="@+id/circleImageView1"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/TrisakayWhite" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight="0.6"
+        android:padding="10dp">
+        
+            <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintEnabled="true"
+            android:id="@+id/fullNameText">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:hint="@string/fullname_hint"
+                android:inputType="textPersonName" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintEnabled="true"
+            android:id="@+id/phoneText">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:hint="@string/phone_hint"
+                android:inputType="phone" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintEnabled="true"
+            android:id="@+id/emailText">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:hint="@string/email_hint"
+                android:inputType="textEmailAddress" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintEnabled="true"
+            android:id="@+id/passwordText">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:hint="@string/password_hint"
+                android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/registerButton"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:text="@string/register_button_text"
+                android:textColor="@color/TrisakayWhite"
+                android:background="@drawable/trisakayroundbutton"
+                android:layout_centerInParent="true" />
+
+            <TextView
+                    android:id="@+id/clickToLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/registerButton"
+                android:text="@string/click_login"
+                    />
+        </RelativeLayout>
+    </LinearLayout>
+
+    </LinearLayout>
+        
+
+    
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,30 @@
+﻿<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<item android:state_pressed="false">
+		<layer-list>
+			<item android:bottom="0dp" android:left="0dp">
+				<shape>
+					<gradient android:angle="270" android:endColor="@color/TrisakayAccentColor" android:startColor="@color/TrisakayAccentColor"/>
+					<stroke android:width="1dp" android:color="@color/TrisakayAccentColor"/>
+					<corners android:radius="5dp"/>
+					<padding android:bottom="0dp" android:left="0dp" android:top="0dp"/>
+					<!-- Corrected typo here -->
+				</shape>
+			</item>
+		</layer-list>
+	</item>
+
+	<item android:state_pressed="true">
+		<layer-list>
+			<item android:bottom="0dp"  android:left="0dp">
+				<shape>
+					<gradient android:angle="270" android:endColor="@color/TrisakayAccentClick" android:startColor="@color/TrisakayAccentClick"/>
+					<stroke android:width="1dp" android:color="@color/TrisakayAccentClick"/>
+					<corners android:radius="5dp"/>
+					<padding android:bottom="0dp" android:left="0dp" android:right="0dp" android:top="0dp"/>
+				</shape>
+			</item>
+		</layer-list>
+	</item>
+
+</selector>

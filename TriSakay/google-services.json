@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "220169387273",
+    "firebase_url": "https://trisakay-fcdea-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "trisakay-fcdea",
+    "storage_bucket": "trisakay-fcdea.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:220169387273:android:eb0c13776efec0c5e0a7d8",
+        "android_client_info": {
+          "package_name": "com.companyname.trisakay"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDLyoirrQJNFBSWsm-f_FXpSsZtfRYdUGw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
